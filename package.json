@@ -1,0 +1,21 @@
+{
+  "name": "supertokens-node-server",
+  "private": true,
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Vihar Kurama",
+  "license": "",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "supertokens-node": "^9.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
