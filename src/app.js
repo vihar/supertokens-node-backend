@@ -21,7 +21,7 @@ supertokens.init({
     // learn more about this on https://supertokens.com/docs/session/appinfo
     appName: "st-custom-ui-node",
     apiDomain: "https://supertokens-node-server-production.up.railway.app",
-    websiteDomain: "http://localhost:3000",
+    websiteDomain: "https://supertokens-ui.vercel.app",
     apiBasePath: "/auth",
     websiteBasePath: "/index",
   },
@@ -36,7 +36,7 @@ const port = process.env.PORT || 3333;
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "https://supertokens-ui.vercel.app"],
     allowedHeaders: ["content-type", ...supertokens.getAllCORSHeaders()],
     credentials: true,
   })
@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Listening on port ${port}`);
 });
 
 app.use(errorHandler());
