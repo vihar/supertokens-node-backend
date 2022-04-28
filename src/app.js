@@ -9,13 +9,15 @@ let {
   errorHandler,
 } = require("supertokens-node/framework/express");
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 supertokens.init({
   framework: "express",
   supertokens: {
     // These are the connection details of the app you created on supertokens.com
-    connectionURI:
-      "https://dca552d1462111ecba169b72c9819ce6-us-east-1.aws.supertokens.io:3574",
-    apiKey: "D3R=USplPoLoHaEuLPUAGq68meQ6K0",
+    connectionURI: process.env.connectionURI,
+    apiKey: process.env.apiKey,
   },
   appInfo: {
     // learn more about this on https://supertokens.com/docs/session/appinfo
