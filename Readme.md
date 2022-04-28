@@ -12,6 +12,10 @@ The demo app can be viewed here: https://supertokens-ui.vercel.app/
 git clone https://github.com/vihar/supertokens-node-backend
 ```
 
+- Add API Keys from SuperTokens
+
+This repository uses supertokens managed service. Please copy your API keys from SuperTokens dashboard and copy them to `.env` file. The example file can be found at `.env.example`
+
 - Installation (npm)
 
 ```
